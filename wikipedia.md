@@ -20,5 +20,31 @@ aspect oriented **main focus** is *identification*, *specification*, *representa
 
 are aspects of the program that affects other concerns 
 
+</br>
 
+# History
+Aspect oriented software development has many names so far like: 
+- Subject Oriented Programming (Multidimensional Separation of Concerns)
+- Feature Oriented Programming 
+- Adaptive Programming 
+- Aspect Oriented Programming(Gregor Kiczales)
+
+He and Palo Alto Research Center later developed AspectJ framework which main concern is aop
+
+<br><br>
+
+## Aspect Oriented Programming led to: 
+* development of a large class of **object-oriented development methodologies** 
+* **methodologies** for dealing with aspects
+* **modeling techniques** (often based on the ideas of the Unified Modeling Language, UML)
+* **testing** technology for assessing the effectiveness of aspect approaches
+<br><br>
+
+## Aspect oriented software development refers to: 
+* requirement engineering
+* business process management
+* analysis and design
+* architecture
+* programming and implementation techniques
+* testing and software maintenance techniques.
 
