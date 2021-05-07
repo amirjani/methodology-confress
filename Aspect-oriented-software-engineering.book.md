@@ -1,4 +1,7 @@
 # Opening 
+![image of aspectJ Code](https://i.ibb.co/5rHhNsn/Screen-Shot-2021-05-07-at-3-28-10-PM.png)
+
+
 In most large systems, the relationships between the requirements and the program components are complex. A single requirement may be implemented by a number of components and each component may include elements of several requirements. In practice, this means that implementing a change to the requirements may involve understanding and changing several components. Alternatively, a component may provide some core functionality but also include code that implements several system requirements.
 
 Aspect-oriented software engineering (AOSE) is an approach to software devel- opment that is intended to address this problem and so make programs easier to maintain and reuse
@@ -94,3 +97,39 @@ A pointcut identifies the specific event(s) (e.g., a call to a named procedure) 
 3. Advice can be included when a field in an object is modified; you can include advice to monitor or change that field.
 
 Aspect weavers are extensions to compilers that process the definition of aspects and the object classes and methods that define the system
+
+<br><br>
+# Software engineering with aspects
+
+Aspects were originally introduced as a programming language construct but, as I have discussed, the notion of concerns is one that really comes from the system requirements. Therefore, it makes sense to adopt an aspect-oriented approach at all stages of the system development process. In the early stages of software engineering, adopting an aspect-oriented approach means using the notion of separating concerns as a basis for thinking about the requirements and the system design. Identifying and modeling concerns should be part of the requirements engineering and design processes. Aspect-oriented programming languages then provide the technological support to maintain the separation of concerns in your implementation of the system
+
+## Concern-oriented requirements engineering
+![view ports image](https://i.ibb.co/GxgZ0MD/Screen-Shot-2021-05-07-at-3-39-37-PM.png)
+
+A viewpoint-oriented approach to requirements engineering, where each viewpoint represents the requirements of related groups of stakeholders, is one way to separate core and secondary concerns, 
+
+## Aspect-oriented design and programming
+Aspect-oriented design is the process of designing a system that makes use of aspects to implement the cross-cutting concerns and extensions that are identified during the requirements engineering process.
+
+<a href="https://ibb.co/0BgLwWZ"><img src="https://i.ibb.co/hXPNqnH/Screen-Shot-2021-05-07-at-3-56-59-PM.png" alt="Screen-Shot-2021-05-07-at-3-56-59-PM" border="0"></a>
+
+<a href="https://ibb.co/WtHxhJ4"><img src="https://i.ibb.co/q5DySQ3/Screen-Shot-2021-05-07-at-3-57-13-PM.png" alt="Screen-Shot-2021-05-07-at-3-57-13-PM" border="0"></a>
+
+## Developing an effective process for aspect-oriented design is essential if aspect- oriented design is to be accepted and used.
+
+<a href="https://ibb.co/yWhyf3n"><img src="https://i.ibb.co/KFNq01j/Screen-Shot-2021-05-07-at-4-05-58-PM.png" alt="Screen-Shot-2021-05-07-at-4-05-58-PM" border="0"></a>
+
+1. **Core system design:** you design the system architecture to support the core functionality of the system. The architecture must also take into account quality of service requirements such as performance and dependability requirements.
+
+2. **Aspect identification and design:** Starting with the extensions identified in the system requirements, you should analyze these to see if they are aspects in themselves or if they should be broken down into several aspects. Once aspects have been identified, these can then be separately designed, taking into account the design of the core system features.
+
+3. **Composition design:** At this stage, you analyze the core system and aspect designs to discover where the aspects should be composed with the core system.
+
+4. **Conflict analysis and resolution:** A problem with aspects is that they may interfere with each other when they are composed with the core system. Conflicts occur when there is a pointcut clash with different aspects specifying that they should be composed at the same point in the program.
+
+5. **Name design:** This is an important design activity that defines standards for naming entities in the program. This is essential to avoid the problem of accidental pointcuts. These occur when, at some program join point, the name accidentally matches that in a pointcut pattern.
+
+<a href="https://ibb.co/WcKHCF9"><img src="https://i.ibb.co/1920cKV/Screen-Shot-2021-05-07-at-4-18-05-PM.png" alt="Screen-Shot-2021-05-07-at-4-18-05-PM" border="0"></a>
+
+## Verification and validation
+For aspect-oriented systems, the processes of validation testing are no different than for any other system. The final executable program is treated as a black box and tests are devised to show whether or not the system meets its requirements.
