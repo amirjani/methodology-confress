@@ -66,3 +66,31 @@ An aspect includes a specification of where the cross-cutting concern is to be w
 
 **poincut**
 > before: call (public void update* (..))
+
+<br>
+
+```The meaning of this is that before the execution of any method whose name starts with the string update, followed by any other sequence of characters, the code in the aspect after the pointcut definition should be executed.```
+
+<br>
+
+``The code to be executed is known as the ‘advice’ and is the implementation of the cross- cutting concern.``
+
+<br>
+
+``A join point is an event that occurs during the execution of a program; so, it could be a method call, the initialization of a variable, the updating of a field, etc``
+
+**types of join points:**
+* *call events:* calls to a method or a constructor
+* *execution events:* the execution of a method or a constructor
+* *initialization events:* class or object initialization
+* *data events:* accessing or updating of a field
+* *exception events:* the handling of an exception
+
+A pointcut identifies the specific event(s) (e.g., a call to a named procedure) with which advice should be associated. This means that you can weave advice into a pro- gram in many different contexts
+
+### depending on the join point model that is supported
+1. Advice can be included before the execution of a specific method, a list of named methods, or a list of methods whose names match a pattern specification
+2. Advice can be included after the normal or exceptional return from a method.
+3. Advice can be included when a field in an object is modified; you can include advice to monitor or change that field.
+
+Aspect weavers are extensions to compilers that process the definition of aspects and the object classes and methods that define the system
