@@ -35,10 +35,10 @@ It is easier to trace concerns, expressed as a requirement or a related set of r
     * which are related to the overall policies that govern the use of a system. Policy concerns include security and safety concerns and concerns related to business rules.
 4. **System concerns**
     * which are related to attributes of the system as a whole, such as its maintainability or its configurability.
-4. **Organizational concerns**
+5. **Organizational concerns**
     * which are related to organizational goals and priorities
 
-Programming language abstractions, such as procedures and classes, are the mechanism that you normally use to organize and structure the core concerns of a system. However, the implementation of the core concerns in conventional program- ming languages usually includes additional code to implement the cross-cutting, functional, quality of service, and policy concerns. This leads to two undesirable phenomena: tangling and scattering.
+Programming language abstractions, such as procedures and classes, are the mechanism that you normally use to organize and structure the core concerns of a system. However, the implementation of the core concerns in conventional programming languages usually includes additional code to implement the cross-cutting, functional, quality of service, and policy concerns. This leads to two undesirable phenomena: tangling and scattering.
 
 The changes to the system are not all located in one place and so you have to spend time looking for the components in the system that have to be changed. You then have to change each of these components to incorporate the required changes. This may be expensive because of the time required to analyze the components and then make and test the changes. There is always the possibility that you will miss some code that should be changed and so the statistics will be incorrect. Furthermore, as several changes have to be made, this increases the chances that you will make a mistake and introduce errors into the software.
 
