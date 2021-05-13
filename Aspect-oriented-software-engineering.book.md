@@ -4,11 +4,11 @@
 
 In most large systems, the relationships between the requirements and the program components are complex. A single requirement may be implemented by a number of components and each component may include elements of several requirements. In practice, this means that implementing a change to the requirements may involve understanding and changing several components. Alternatively, a component may provide some core functionality but also include code that implements several system requirements.
 
-Aspect-oriented software engineering (AOSE) is an approach to software devel- opment that is intended to address this problem and so make programs easier to maintain and reuse
+Aspect-oriented software engineering (AOSE) is an approach to software development that is intended to address this problem and so make programs easier to maintain and reuse
 
 AOSE is based around abstractions called aspects, which implement system functionality that may be required at several different places in a program
 
-An important characteristic of aspects is that they include a definition of where they should be included in a program, as well as the code implementing the cross- cutting concern.
+An important characteristic of aspects is that they include a definition of where they should be included in a program, as well as the code implementing the cross-cutting concern.
 
 The key benefit of an aspect-oriented approach is that it supports the separation of concerns
 
