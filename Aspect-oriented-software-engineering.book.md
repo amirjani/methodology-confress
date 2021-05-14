@@ -89,7 +89,7 @@ An aspect includes a specification of where the cross-cutting concern is to be w
 * *data events:* accessing or updating of a field
 * *exception events:* the handling of an exception
 
-A pointcut identifies the specific event(s) (e.g., a call to a named procedure) with which advice should be associated. This means that you can weave advice into a pro- gram in many different contexts
+A pointcut identifies the specific event(s) (e.g., a call to a named procedure) with which advice should be associated. This means that you can weave advice into a program in many different contexts
 
 ### depending on the join point model that is supported
 1. Advice can be included before the execution of a specific method, a list of named methods, or a list of methods whose names match a pattern specification
